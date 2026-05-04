@@ -51,6 +51,6 @@ taskflow-lite/
 ### GitHub Pages
 1. Push this folder to a GitHub repository
 2. Go to **Settings → Pages → Source: main branch / root**
-3. Your app is live at `https://<username>.github.io/<repo>/`
+3. Your app is live at `https://github.com/sannu7702/taskflow-lite.git`
 
 
