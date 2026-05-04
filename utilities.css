@@ -1,0 +1,16 @@
+.hidden { display: none !important; }
+.sr-only {
+  position: absolute; width: 1px; height: 1px;
+  padding: 0; margin: -1px; overflow: hidden;
+  clip: rect(0,0,0,0); border: 0;
+}
+.flex { display: flex; }
+.flex-center { display: flex; align-items: center; justify-content: center; }
+.gap-sm { gap: 0.5rem; }
+.gap-md { gap: 1rem; }
+.mt-sm { margin-top: 0.5rem; }
+.mt-md { margin-top: 1rem; }
+.text-muted { color: var(--muted); }
+.text-sm { font-size: 0.85rem; }
+.rounded { border-radius: var(--radius); }
+.shadow { box-shadow: var(--shadow); }

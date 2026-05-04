@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TaskFlow Lite — Your Client-Side Task Manager</title>
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="stylesheet" href="styles/utilities.css" />
+</head>
+<body>
+
+  <header>
+    <h1>TaskFlow Lite</h1>
+    <p>Your client-side task management solution</p>
+  </header>
+
+  <main>
+
+    <!-- ── Add / Edit Task Form ── -->
+    <div class="task-form-wrapper">
+      <form id="task-form" novalidate>
+        <div class="input-row">
+          <input
+            type="text"
+            id="task-input"
+            placeholder="Add a new task…"
+            maxlength="120"
+            autocomplete="off"
+            aria-label="New task"
+          />
+          <button type="submit" class="submit-btn">+ Add Task</button>
+        </div>
+        <div class="form-meta">
+          <span id="error-msg" role="alert"></span>
+          <span id="char-count">0 / 120</span>
+        </div>
+      </form>
+    </div>
+
+    <!-- ── Filter Bar ── -->
+    <div class="filter-bar" role="group" aria-label="Filter tasks">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="active">Active</button>
+      <button class="filter-btn" data-filter="completed">Completed</button>
+      <span id="task-counter" aria-live="polite"></span>
+    </div>
+
+    <!-- ── Task List ── -->
+    <ul id="task-list" aria-label="Task list"></ul>
+
+    <!-- ── Footer ── -->
+    <div class="list-footer">
+      <button id="clear-completed">Clear Completed</button>
+    </div>
+
+  </main>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
